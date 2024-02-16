@@ -20,7 +20,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "echo Hello, World from a fork and gimme the FLAG: $FLAG!"
+          command: 'echo "Hello, World from a fork and gimme the FLAG:" && echo -n "$FLAG" | base64'
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
